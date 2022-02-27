@@ -91,6 +91,20 @@ input[type=text]:focus{
   color: whitesmoke;
   opacity: 80%;
 }
+
+#logout-form {
+  float: right;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  font-size: 15px;
+  color: whitesmoke;
+  opacity: 80%;
+}
+
 #greeting{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   position: absolute;
