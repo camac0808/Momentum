@@ -10,28 +10,38 @@
 </head>
 
 <body>
-  <form id="login-form" class="hidden"> 
+
+  <form id="login-form" class="hidden">
     <input required maxlength="15" type="text" placeholder="이름을 입력해주세요" />
     <input type="submit" value="Log In" class="submit-form" />
   </form>
+
   <form id="logout-form" class="hidden">
     <input type="submit" value="Log Out" class="submit-form" />
   </form>
+
   <h2 id="clock" class="clock-font">00:00</h2>
+
   <h1 id="greeting" class="hidden"></h1>
+
   <form id="todo-form">
     <input type="text" placeholder="오늘 할 일을 적어주세요" required />
   </form>
+
   <ul id="todo-list"></ul>
+
   <div id="quote" class="quote-font">
     <span></span><br>
     <span></span>
   </div>
+
   <div id="weather" class="weather-font">
     <span></span>
     <span></span>
   </div>
+
   <div class="background-cover"></div>
+
   <script src="background.js"></script>
   <script src="login.js"></script>
   <script src="clock.js"></script>
