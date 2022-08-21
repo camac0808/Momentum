@@ -20,7 +20,6 @@ Momentum 공식 홈페이지: <https://momentumdash.com/>
 ### 3. open weather api를 사용하여 실시간 날씨 출력
 
 ### 4. Local storage 사용
-![날씨](weather.PNG)
 
 ## 정보
 
