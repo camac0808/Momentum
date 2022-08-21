@@ -2,28 +2,24 @@
 > 투두리스트
 
 ### 보러가기: <https://camac0808.github.io/Momentum>
+Momentum 공식 홈페이지: <https://momentumdash.com/>
 
 ![메인페이지](mainpage.PNG)
 
 ## 프로젝트에 사용된 언어 및 라이브러리
 
 * Javascript ES6
-* Bootstrap
-* Weather api
-* Newscatcher api
+* Openweather api
 
 ## 프로젝트의 기능 설명
 
-### 1. sidebar기능을 통해 카테고리별로 분류
-![로딩](sidebar.PNG)
+### 1. JavaScript를 이용해 To-do list 제작
 
-### 2. header searchbar 기능, 돋보기 아이콘 누르면 searchbar 
-![헤더](searchbar.PNG)
+### 2. date 객체를 이용하여 시간표시
 
-### 3. 반응형 웹
-![반응형웹](responsive.PNG)
+### 3. open weather api를 사용하여 
 
-### 4. Weather api 사용하여 날씨 표시
+### 4. Local storage 사용
 ![날씨](weather.PNG)
 
 ### 5. 하단에 pagination 구현
