@@ -4,15 +4,14 @@ const ul = document.querySelector("#todo-list");
 
 let toDos = [];
 
-const savedTodos = localStorage.getItem("todos");
 
-if(savedTodos !== null){
-  const parsedTodos = JSON.parse(savedTodos);
+if (localStorage.getItem("todos") !== null) {
+  const parsedTodos = JSON.parse(localStorage.getItem("todos"));
   toDos = parsedTodos;
   parsedTodos.forEach(paintTodo);
 }
 
-function saveTodos() {
+function setTodos() {
   localStorage.setItem("todos", JSON.stringify(toDos)); // localstorage는 문자열밖에 저장을 못한다 a, b, c 이런식으로
   // 그러니 stringify로 배열 자체를 문자열로 변환 시켜버린다. "a", "b", "c" => "["a","b","c"]"
 }
@@ -35,7 +34,7 @@ function deleteTodo(event){
   toDos = toDos.filter(todo => todo.id !== parseInt(li.id)); //a,b,c있을때 a를 누르면 a와 다른 b,c를 남긴다(a를 필터링하고 b,c가 남는다)
   console.log(toDos);
   li.remove();
-  saveTodos(); //필터링 하고 한번더 저장
+  setTodos(); //필터링 하고 한번더 저장
 }
 
 function handleTodoSubmit(event){
@@ -48,7 +47,7 @@ function handleTodoSubmit(event){
   }
   toDos.push(newTodoObj); // 배열에 저장했으나 localstorage는 텍스트만 저장 가능하다
   paintTodo(newTodoObj);
-  saveTodos();
+  setTodos();
 }
 
 todoForm.addEventListener("submit", handleTodoSubmit);
